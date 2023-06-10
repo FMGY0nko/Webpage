@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.4vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 15vw;
+        height: 10vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    h1 {
+        margin-top: 1vw;
+        font-family: 'Open-sans', sans-serif;
+        font-size: 10vw;;
+        text-align: center;
+    }
+
+    .container {
+        width: 96vw;
+        height: 48vw;
+        border-style: solid;
+        border-width: 1vw;
+        border-color: black;
+        border-radius: 1vw;
+        padding: 0;
+    }
+
+    .container img {
+        float: right;
+        height: 48vw;
+        width: 48vw;
+    }
+
+    .artistcon {
+        float: left;
+        width: 48vw;
+        height: 9vw;
+        margin-top: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 1vw;
+        border-bottom-color: black;
+        text-align: center;
+    }
+
+    .artistcon h2 {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5vw;
+    }
+    
+    .topscon {
+        height: 38vw;
+        width: 48vw;
+        text-align: center;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .topscon h3 {
+        margin-bottom: 1vw;
+    }
+
+    .topscon h4 {
+        margin: 0;
+        margin-bottom: 1vw;
+        font-size: 2.5vw;
+    }
+
+    #con1 {
+        position: absolute;
+        top: 24vw;
+        left: 1vw;
+    }
+
+    #con2 {
+        position: absolute;
+        top: 75vw;
+        left: 1vw;
+    }
+
+    #con3 {
+        position: absolute;
+        top: 126vw;
+        left: 1vw;
+    }
+
+    #con4 {
+        position: absolute;
+        top: 177vw;
+        left: 1vw;    
+    }
+
+    #con5 {
+        position: absolute;
+        top: 228vw;
+        left: 1vw;
+    }
+
+    .scontainer {
+        margin-top: 1vw;
+        height: 30vw;
+        width: 30vw;
+        border-style: solid;
+        border-width: 1vw;
+        border-color: black;
+        border-radius: 1vw;
+        text-align: center;
+    }
+
+    .scontainer h2 {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5vw;
+    }
+
+    #row1 {
+        position: absolute;
+        width: 32vw;
+        left: 1vw;
+        top: 278vw;
+    }
+
+    #row2 {
+        position: absolute;
+        width: 32vw;
+        left: 34vw;
+        top: 278vw;
+    }
+
+    #row3 {
+        position: absolute;
+        width: 32vw;
+        left: 67vw;
+        top: 278vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.2vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 10vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    h1 {
+        margin-top: 1vw;
+        font-family: 'Open-sans', sans-serif;
+        font-size: 6vw;;
+        text-align: center;
+    }
+
+    .container {
+        width: 46vw;
+        height: 23vw;
+        border-style: solid;
+        border-width: 1vw;
+        border-color: black;
+        border-radius: 1vw;
+    }
+
+    .container img {
+        float: right;
+        height: 23vw;
+        width: 23vw;
+    }
+
+    .artistcon {
+        float: left;
+        width: 23vw;
+        height: 4.5vw;
+        margin-top: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 0.5vw;
+        border-bottom-color: black;
+        text-align: center;
+    }
+
+    .artistcon h2 {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    .topscon {
+        height: 18vw;
+        width: 23vw;
+        text-align: center;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .topscon h3 {
+        margin-bottom: 0.5vw;
+        font-size: 1.8vw;
+    }
+
+    .topscon h4 {
+        margin: 0;
+        margin-bottom: 1vw;
+        font-size: 1.1vw;
+    }
+
+    #con1 {
+        position: absolute;
+        left: 1vw;
+    }
+
+    #con2 {
+        position: absolute;
+        left: 51vw;
+    }
+
+    #con3 {
+        position: absolute;
+        top: 38vw;
+        left: 1vw;
+    }
+
+    #con4 {
+        position: absolute;
+        top: 38vw;
+        left: 51vw;
+    }
+
+    #con5 {
+        position: absolute;
+        top: 64vw;
+        left: 26vw;
+    }
+
+    .scontainer {
+        display: inline-flex; 
+        margin-left: 1vw;
+        height: 16.8vw;
+        width: 16.8vw;
+        border-style: solid;
+        border-width: 1vw;
+        border-color: black;
+        border-radius: 1vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scontainer h2 {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+
+    #row1 {
+        display: flex;
+        position: absolute;
+        top: 90vw;
+        height: 18.8vw;
+    }
+
+    #row2 {
+        display: flex;
+        position: absolute;
+        top: 109.8vw;
+        height: 18.8vw;
+    }
+
+    #row3 {
+        display: flex;
+        position: absolute;
+        top: 129.6vw;
+        height: 18.8vw;
+    }
+}

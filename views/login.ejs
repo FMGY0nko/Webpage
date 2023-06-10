@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Meta tags that are about the website -->
+     <meta charset="UTF-8">
+     <meta name="author" content="Kristian Bek">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Login section of the site">
+     <meta name="keywords" content="Music, Muscians, Artists, Spotify, Reccomendations, Music Genre, Rap, Hip Hop, Rock, Jazz, Pop, Country">
+     
+     <!-- Title and tab icon of the site -->
+     <title>RecoMusic | Login</title>
+     <link rel="icon" type="image/x-icon" href="/src/micon.ico">
+     
+     <!-- Link to the CSS sheet -->
+     <link rel="stylesheet" type="text/css" href="/css/musicrec.css">
+
+</head>
+<body>
+    
+    <button type="button" onclick="location.href='/'" class="returnbtn">&#9166;</button>
+
+    <form action="/login" method="POST" class="popup" id="login">
+        <h1>Login</h1>
+        <div id="email">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        </div>
+        <div id="password">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+        </div>
+        <div id="reme">
+            <label for="remember">Remember Me</label>
+            <input type="checkbox" value="remember-me" name="remember">
+        </div>
+        <button type="submit" id="logbtn" class="btbtn">Login</button>
+    </form>
+
+</body>
+</html>

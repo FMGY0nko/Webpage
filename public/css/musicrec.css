@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+/* CSS/Display for Mobile */
+@media only screen and (max-width: 768px) {
+    #logo {
+        display: block;
+        margin: auto;
+        width: 78vw;
+        height: 46vw;
+        margin-top: 20vw;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    #search {
+        margin: auto;
+        width: 80vw;
+    }
+
+    #search input,
+    #search button {
+        width: 75%;
+        border: 0.4vw solid black;
+        font-size: 3.6vw;
+        padding: 2.4vw;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #search input:hover {
+        opacity: .8;
+    }
+
+    #search button {
+        width: 25%;
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
+        float: right;
+        cursor: pointer;
+        border-left: 0;
+    }
+
+    #search button:hover {
+        background-color: #e8e7e6;
+    }
+
+    #logsec {
+        width: 41vw;
+        margin: auto;
+        margin-top: 5vw;
+    }
+
+    .btbtn {
+        background-color: white;
+        border-radius: 1vw;
+        border-width: 0.4vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 40vw;
+        height: 10vw;
+        display: block;
+        margin: 1vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .btbtn:hover {
+        background-color: #e8e7e6;
+    }
+    
+    .popup {
+        position: absolute;
+        background-color: white;
+        width: 80vw;
+        height: 80vw;
+        border-width: 1vw;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1vw;
+        top: 20vw;
+        left: 10vw; 
+    }
+    
+    #result,
+    #err {
+        display: none;
+    }
+    
+    #advbtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 9vw;
+        height: 7vw;
+        background-color: white;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-bottom-right-radius: 0.5vw;
+        border-left: none;
+        border-top: none;
+        transition: all 0.3s;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+        cursor: pointer;
+    }
+    
+    #advbtn:hover {
+        background-color: #e8e7e6;
+    }
+    
+    #closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5vw;
+        height: 5vw;
+        background-color: #fa0000;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-right: none;
+        border-top: none;
+        transition: all 0.3s;
+        margin: 0;
+        cursor: pointer;
+    }
+    
+    #closebtn:hover {
+        background-color: #c41010;
+    }
+    
+    #result header h1 {
+        width: 56.5vw;
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #artistinfo {
+        margin: auto;
+        height: 20vw;
+        width: 43.1vw;
+    }
+    
+    #con {
+        position: relative;
+        top: 1vw;
+        width: 20vw;
+        height: 18vw;
+        text-align: center;
+    }
+    
+    #con h3 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+    
+    #artistinfo img {
+        position: relative;
+        bottom: 17vw;
+        left: 23.1vw;
+        width: 20vw;
+        height: 18vw;
+    }
+    
+    #result h2 {
+        margin: auto;
+        width: 29.7vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+    
+    #con1 {
+        position: absolute;
+        width: 36vw;
+        height: 22vw;
+        top: 32vw;
+        left: 2vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con2 {
+        position: absolute;
+        width: 36vw;
+        height: 22vw;
+        top: 32vw;
+        left: 40vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    .names1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 5vw;
+    }
+    
+    #con3 {
+        position: absolute;
+        width: 25vw;
+        height: 22vw;
+        top: 55vw;
+        left: 1vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con4 {
+        position: absolute;
+        width: 24vw;
+        height: 22vw;
+        top: 55vw;
+        left: 27vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con5 {
+        position: absolute;
+        width: 25vw;
+        height: 22vw;
+        top: 55vw;
+        left: 52vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    .names2 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+
+    #login h1 {
+        margin: auto;
+        margin-top: 10vw;
+        width: 48vw;
+        font-size: 6vw;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+    
+    #email {
+        margin: auto;
+        margin-top: 5vw;
+        width: 50vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+    
+    #email input {
+        width: 50vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #password {
+        margin: auto;
+        margin-top: 2vw;
+        width: 50vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+    
+    #password input {
+        width: 50vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #logbtn {
+        display: block;
+        margin: auto;
+        margin-top: 4vw;
+        width: 20vw;
+    }
+    
+    #create_account h1 {
+        margin: auto;
+        margin-top: 10vw;
+        width: 48vw;
+        font-size: 5vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .createinput {
+        margin: auto;
+        margin-top: 2vw;
+        width: 50vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4vw;
+    }
+    
+    .createinput input {
+        width: 50vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+    }   
+    
+    #createbtn {
+        display: block;
+        margin: auto;
+        margin-top: 4vw;
+        width: 20vw;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.4vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 15vw;
+        height: 10vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
+
+    #reme {
+        display: flex;
+        margin-top: 2vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reme input {
+        width: 5vw;
+        height: 5vw;
+        margin-left: 1vw;
+    }
+
+    #err h1 {
+        margin-top: 4vw;
+        font-family: 'Open sans', sans-serif;
+        text-align: center;
+    }
+
+    #err h3 {
+        font-family: 'Open sans', sans-serif;
+        text-align: center;
+    }
+
+    ol {
+        margin-top: 2vw;
+        position: relative;
+        left: 7vw;
+        width: 70vw;
+        font-family: 'Open sans', sans-serif;
+        font-size: 5vw;
+    }
+}
+
+/* CSS/Display for PC */
+@media only screen and (min-width: 768px) {
+    #logo {
+        display: block;
+        margin: auto;
+        width: 39vw;
+        height: 23vw;
+        margin-top: 10vw;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    #search {
+        margin: auto;
+        width: 40vw;      
+    }
+
+    #search input,
+    #search button {
+        width: 75%;
+        border: 0.2vw solid black;
+        font-size: 1.8vw;
+        padding: 1.2vw;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #search input:hover {
+        opacity: .8;
+    }
+
+    #search button {
+        width: 25%;
+        background-color: white;
+        color: black;
+        transition: all 0.3s;
+        float: right;
+        cursor: pointer;
+        border-left: 0;
+    }
+
+    #search button:hover {
+        background-color: #e8e7e6;
+    }
+    
+    #logsec {
+        position: absolute;
+        top: 0;
+        left: 88vw;
+    }
+
+    .btbtn {
+        background-color: white;
+        border-radius: 1vw;
+        border-width: 0.2vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 10vw;
+        height: 5vw;
+        display: block;
+        margin: 1vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .btbtn:hover {
+        background-color: #e8e7e6;
+    }
+    
+    .popup {
+        position: absolute;
+        background-color: white;
+        width: 60vw;
+        height: 40vw;
+        border-width: 1vw;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1vw;
+        top: 10vw;
+        left: 20vw; 
+    }
+    
+    #result,
+    #err {
+        display: none;
+    }
+    
+    #advbtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 7vw;
+        height: 4vw;
+        background-color: white;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-bottom-right-radius: 0.5vw;
+        border-left: none;
+        border-top: none;
+        transition: all 0.3s;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1vw;
+    }
+    
+    #advbtn:hover {
+        background-color: #e8e7e6;
+    }
+    
+    #closebtn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2vw;
+        height: 2vw;
+        background-color: #fa0000;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-right: none;
+        border-top: none;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+    
+    #closebtn:hover {
+        background-color: #c41010;
+    }
+    
+    #result header h1 {
+        width: 33.9vw;
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3vw;
+    }
+    
+    #artistinfo {
+        margin: auto;
+        height: 13vw;
+        width: 24.4vw;
+    }
+    
+    #con {
+        position: relative;
+        top: 1vw;
+        width: 11vw;
+        height: 11vw;
+        text-align: center;
+    }
+    
+    #con h3 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #artistinfo img {
+        position: relative;
+        bottom: 10vw;
+        left: 13.4vw;
+        width: 11vw;
+        height: 11vw;
+    }
+    
+    #result h2 {
+        margin: auto;
+        width: 14.9vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #con1 {
+        position: absolute;
+        width: 10.4vw;
+        height: 17vw;
+        top: 20vw;
+        left: 1vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con2 {
+        position: absolute;
+        width: 10.4vw;
+        height: 17vw;
+        top: 20vw;
+        left: 12.4vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    .names1 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #con3 {
+        position: absolute;
+        width: 10.4vw;
+        height: 17vw;
+        top: 20vw;
+        left: 23.8vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con4 {
+        position: absolute;
+        width: 10.4vw;
+        height: 17vw;
+        top: 20vw;
+        left: 35.2vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    #con5 {
+        position: absolute;
+        width: 10.4vw;
+        height: 17vw;
+        top: 20vw;
+        left: 46.6vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.2vw;
+        border-radius: 1vw; 
+        text-align: center;
+    }
+    
+    .names2 {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+
+    #login h1 {
+        margin: auto;
+        margin-top: 2vw;;
+        width: 38vw;
+        font-size: 4vw;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+    #email {
+        margin: auto;
+        margin-top: 1vw;
+        width: 40vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #email input {
+        width: 40vw;
+        height: 4vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #password {
+        margin: auto;
+        margin-top: 2vw;
+        width: 40vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #password input {
+        width: 40vw;
+        height: 4vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    #logbtn {
+        display: block;
+        margin: auto;
+        margin-top: 2vw;
+        width: 20vw;
+        font-size: 2vw;
+    }
+    
+    #create_account h1 {
+        margin: auto;
+        width: 38vw;
+        font-size: 4vw;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .createinput {
+        margin: auto;
+        margin-top: 1vw;
+        width: 40vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+    
+    .createinput input {
+        width: 40vw;
+        height: 4vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }   
+    
+    #createbtn {
+        display: block;
+        margin: auto;
+        margin-top: 2vw;
+        width: 20vw;
+        font-size: 2vw;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.2vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 10vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+    footer p {
+        font-size: 1vw;
+    }
+
+    #reme {
+        display: flex;
+        margin-top: 1vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #reme input {
+        width: 2vw;
+        height: 2vw;
+        margin-left: 1vw;
+    }
+
+    #err h1 {
+        font-family: 'Open sans', sans-serif;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #err h3 {
+        font-family: 'Open sans', sans-serif;
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    ol {
+        margin-top: 1vw;
+        position: relative;
+        left: 6vw;
+        width: 50vw;
+        font-family: 'Open sans', sans-serif;
+        font-size: 2.5vw;
+    }
+
+    li {
+        margin-bottom: 1vw;
+    }
+}

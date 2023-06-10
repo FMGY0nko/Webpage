@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.4vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 15vw;
+        height: 10vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3.5vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    .window {
+        margin: auto;
+        margin-top: 20vw;
+        background-color: white;
+        width: 80vw;
+        height: 80vw;
+        border-width: 1vw;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1vw;
+    }
+
+    .window h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .window h1 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 5.5vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #con1 {
+        position: absolute;
+        top: 45vw;
+        left: 10.5vw;
+        width: 38.25vw;
+        height: 26.5vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con2 {
+        position: absolute;
+        top: 45vw;
+        left: 50.25vw;
+        width: 38.25vw;
+        height: 26.5vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con3 {
+        position: absolute;
+        top: 73vw;
+        left: 10.5vw;
+        width: 24.83333vw;
+        height: 26.5vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con4 {
+        position: absolute;
+        top: 73vw;
+        left: 36.93333vw;
+        width: 24.83333vw;
+        height: 26.5vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con5 {
+        position: absolute;
+        top: 73vw;
+        left: 63.43333vw;
+        width: 24.83333vw;
+        height: 26.5vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .returnbtn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: white;
+        border-bottom-right-radius: 1vw; 
+        border-width: 0.2vw;
+        border-color: black;
+        border-style: solid;
+        cursor: pointer;
+        transition: all 0.3s;
+        width: 10vw;
+        height: 5vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2vw;
+    }
+
+    .returnbtn:hover {
+        background-color: #e8e7e6;
+    }
+
+    .window {
+        margin: auto;
+        margin-top: 7vw;
+        background-color: white;
+        width: 60vw;
+        height: 40vw;
+        border-width: 1vw;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1vw;
+    }
+
+    .window h2 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 3vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .window h1 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 3.5vw;
+        margin-top: 1vw;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    #con1 {
+        position: absolute;
+        top: 23.5vw;
+        left: 20.5vw;
+        width: 28.25vw;
+        height: 10.75vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con2 {
+        position: absolute;
+        top: 23.5vw;
+        left: 50.25vw;
+        width: 28.25vw;
+        height: 10.75vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con3 {
+        position: absolute;
+        top: 35.75vw;
+        left: 20.5vw;
+        width: 18.33333vw;
+        height: 10.75vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con4 {
+        position: absolute;
+        top: 35.75vw;
+        left: 40.33333vw;
+        width: 18.33333vw;
+        height: 10.75vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #con5 {
+        position: absolute;
+        top: 35.75vw;
+        left: 60.16666vw;
+        width: 18.33333vw;
+        height: 10.75vw;
+        border-color: black;
+        border-style: solid;
+        border-width: 0.5vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con h3 {
+        font-family: 'Open sans', sans-serif;
+        font-size: 2.5vw;
+    }
+}

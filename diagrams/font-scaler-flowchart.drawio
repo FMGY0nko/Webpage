@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net" modified="2023-05-28T14:33:46.494Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="XNbu6ZtawEtHAQRt7kNK" version="21.3.4" type="device">
+  <diagram name="Page-1" id="FOlJ0Cv1EYDMTXUwUOTk">
+    <mxGraphModel dx="596" dy="381" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KlMKxKdMy3NM37eBNTFn-2" target="KlMKxKdMy3NM37eBNTFn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-2" value="Put text into container/html doc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="366" y="30" width="96" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-13" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KlMKxKdMy3NM37eBNTFn-7" target="KlMKxKdMy3NM37eBNTFn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-15" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KlMKxKdMy3NM37eBNTFn-7" target="KlMKxKdMy3NM37eBNTFn-14">
+          <mxGeometry x="0.0058" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-7" value="Is the text smaller than the container?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="366" y="120" width="96" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-12" value="Leave the text as it is" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="366" y="210" width="96" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="KlMKxKdMy3NM37eBNTFn-14" target="KlMKxKdMy3NM37eBNTFn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KlMKxKdMy3NM37eBNTFn-14" value="Reduce the font size" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="210" width="96" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

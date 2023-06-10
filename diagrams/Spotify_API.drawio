@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2023-06-08T18:50:09.176Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="t5ZWztt51S00H7dV1hH2" version="21.3.5" type="device">
+  <diagram name="Side-1" id="EJoPcf7ftIrvC934UOr5">
+    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEQbWxnbrjA6yCLzMzVi-1" target="vEQbWxnbrjA6yCLzMzVi-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-1" value="Get Spotify API token" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="30" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEQbWxnbrjA6yCLzMzVi-2" target="vEQbWxnbrjA6yCLzMzVi-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-2" value="Get Id of inputted artist" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="100" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vEQbWxnbrjA6yCLzMzVi-3" target="vEQbWxnbrjA6yCLzMzVi-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-3" value="Get related artists with the Id" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="170" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-4" value="Get inputted artist image" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="240" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vEQbWxnbrjA6yCLzMzVi-8" value="Make popup visible with the information&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

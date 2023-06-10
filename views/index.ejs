@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    
+    <!-- Meta tags that are about the website -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Kristian Bek">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The website reccomends music based off what you listen to">
+    <meta  name="keywords" content="Music, Muscians, Artists, Spotify, Reccomendations, Music Genre, Rap, Hip Hop, Rock, Jazz, Pop, Country">
+    
+    <!-- Title and tab icon of the site -->
+    <title>RecoMusic</title>
+    <link rel="icon" type="image/x-icon" href="/src/micon.ico">
+    
+    <!-- Link to the CSS sheet -->
+    <link rel="stylesheet" type="text/css" href="/css/musicrec.css">
+
+</head>
+<body>
+    
+    <!-- Logo -->
+    <img src="/src/Recomusic.png" alt="Logo" id="logo"> 
+    
+    <!-- Search Bar -->
+    <form action="/history" method="POST" id="search">
+        <input type="text" name="search" placeholder="Enter a Musician..." id="inputbox">
+        <button type="submit" onclick="Results()">Find</button>
+    </form>
+    
+    <!-- Button section -->
+    <div id="logsec">
+        <!-- Uses an if statement within the html code to account for whether or not a user is logged in. authenticated variable
+            sent in through server side code. -->
+        <% if (authenticated) { %>
+            <form action="/logout?_method=DELETE" method="POST">
+                <button type="submit" class="btbtn">Logout</button>
+            </form>
+            <button type="button" class="btbtn" onclick="location.href='/profile'">Profile</button>
+        <% } else { %>
+            <button type="button" class="btbtn" onclick="location.href='/login'">Login</button>
+            <button type="button" class="btbtn" onclick="location.href='/register'">Create an Account</button>
+        <% } %>
+    </div>
+    
+    <!-- Results of search -->
+    <div class="popup" id="result">
+
+        <!-- Button that opens the advanced results -->
+        <button type="button" id="advbtn" onclick="openadv()">Advanced Results</button>
+        <!-- Button for closing the popup -->
+        <button type="button" onclick="closepop('result')" id="closebtn">X</button>
+
+        <!-- Header of the popup -->
+        <header>
+            <h1>People Who Listen To:</h1> 
+            <div id="artistinfo">
+                <div id="con">
+                    <h3 id="artistname"></h3>
+                </div>
+                <img id="artistimage" alt="Artist_Image" src="">
+            </div>
+            <h2>Also Listen To:</h2>
+        </header>
+
+        <!-- Container and name for the top 5 each artists related -->
+        <div id="con1">
+            <h4 class="names1" id="artist1"></h4>
+        </div>
+        <div id="con2">
+            <h4 class="names1" id="artist2"></h4>
+        </div>
+        <div id="con3">
+            <h4 class="names2" id="artist3"></h4>
+        </div>
+        <div id="con4">
+            <h4 class="names2" id="artist4"></h4>
+        </div>
+        <div id="con5">
+            <h4 class="names2" id="artist5"></h4>
+        </div>
+    </div>
+
+    <!-- Pop up that comes up when there is an error in the search -->
+    <div class="popup" id="err">
+        <!-- Button to close the popup-->
+        <button type="button" onclick="closepop('err')" id="closebtn">X</button>
+
+        <!-- Header -->
+        <h1>There Has Been A Error</h1>
+        <h3>This could be because:</h3>
+        
+        <!-- List of possible issues with the search -->
+        <ol type="1">
+            <li>You spelt the artist's name wrong</li>
+            <li>The artist has a special character you didn't include</li>
+            <li>The artist doesn't have enough data on them</li>
+            <li>You are not connected to the internet</li>
+        </ol>
+    </div>
+
+    <!-- Footer showing the api im using and who I am -->
+    <footer>
+        <p>Powered by Spotify API</p>
+        <p>Web Project created by Kristian Bek</p>
+    </footer>
+    
+    <!-- Link to the JavaScript script -->
+    <script src="musicrec.js"></script>
+    
+</body>
+</html>
