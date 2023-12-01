@@ -227,24 +227,28 @@ function set_rating(rating, id) {
     });
 }
 
+// Sets rating for the website for user to be 'Amazing'
 app.post('/rateA', (req, res) => {
     let id = req.user.id;
     set_rating('Amazing', id)
     res.redirect('/');
 });
 
+// Sets rating for the website for user to be 'Good'
 app.post('/rateG', (req, res) => {
     let id = req.user.id;
     set_rating('Good', id)
     res.redirect('/');
 });
 
+// Sets rating for the website for user to be 'Bad'
 app.post('/rateB', (req, res) => {
     let id = req.user.id;
     set_rating('Bad', id)
     res.redirect('/');
 });
 
+// Sets rating for the website for user to be 'Horrible'
 app.post('/rateH', (req, res) => {
     let id = req.user.id;
     set_rating('Horrible', id)
