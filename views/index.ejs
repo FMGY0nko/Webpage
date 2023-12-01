@@ -19,6 +19,23 @@
 </head>
 <body>
     
+    <% if (authenticated) { %>
+        <div id="ratebox">
+            <form action="/rateA" method="POST">
+                <button type="submit" class="ratebtn">&#128515;</button>
+            </form>
+            <form action="/rateG" method="POST">
+                <button type="submit" class="ratebtn">&#128578;</button>
+            </form>
+            <form action="/rateB" method="POST">
+                <button type="submit" class="ratebtn">&#128577;</button>
+            </form>
+            <form action="/rateH" method="POST">
+                <button type="submit" class="ratebtn">&#129324;</button>
+            </form>
+        </div>
+    <% } %>
+
     <!-- Logo -->
     <img src="/src/Recomusic.png" alt="Logo" id="logo"> 
     

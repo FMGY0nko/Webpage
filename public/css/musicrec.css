@@ -406,6 +406,31 @@
 
 /* CSS/Display for PC */
 @media only screen and (min-width: 768px) {
+    #ratebox {
+        position: absolute;
+        top: 1vw;
+        left: 1vw;
+        width: 5vw;
+        height: 12vw;
+        border: 0.2vw solid black;
+        border-radius: 1vw;
+        text-align: center;
+    }
+
+    .ratebtn {
+        border: none;
+        background: none;
+        font-size: 2vw;
+        margin: 0.2vw;
+        line-height: 2.5vw;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .ratebtn:active {
+        transform: translateY(0.1vw); 
+    }
+
     #logo {
         display: block;
         margin: auto;

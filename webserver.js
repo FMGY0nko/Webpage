@@ -20,6 +20,10 @@ const db = new sqlite3.Database('./users.db', sqlite3.OPEN_READWRITE, (err) => {
     if (err) return console.error(err.message);
 });
 
+//Used to create the table 
+//sql = 'CREATE TABLE users(id, name, email, password, his1, his2, his3, his4, his5, counter, rating)';
+//db.run(sql);
+
 // Connects to passport config function and provides it the neccessary user info
 const initializePassport = require('./pass-config');
 initializePassport(passport, async (email) => {
@@ -99,7 +103,7 @@ app.post('/register', async (req, res) => {
         // Hashes the inputted password
         const hashedPassword = await bcrypt.hash(req.body.PSW, 10);
         // Defines what information needs to be inputted into the database
-        sql = 'INSERT INTO users(id, name, email, password, his1, his2, his3, his4, his5, counter) VALUES (?,?,?,?,?,?,?,?,?,?)';
+        sql = 'INSERT INTO users(id, name, email, password, his1, his2, his3, his4, his5, counter, rating) VALUES (?,?,?,?,?,?,?,?,?,?,?)';
         // Inputs user information into the database
         // UserID: date and time of account creation, Username/Email: Inputted info, Password: Hashed password
         // His1-5: empty string as user has no history yet, Counter: Starts as 1
@@ -115,7 +119,8 @@ app.post('/register', async (req, res) => {
                 '',
                 '',
                 '',
-                1
+                1,
+                ''
             ], 
             (err) => {
                 if (err) return console.error(err.message);
@@ -206,13 +211,44 @@ app.post('/history', (req, res) => {
                 sql = `UPDATE users SET counter = ? WHERE id = ?`;
                 db.run(sql, [(counter + 1), id], function (err) {
                     if (err) return console.error(err.message);
-
                 });
             });
         });
     };
     // Sends 204 respones (meaning ok)
     res.sendStatus(204);
+});
+
+// Function that sets the rating of the website for a user
+function set_rating(rating, id) {
+    sql = 'UPDATE users SET rating = ? WHERE id = ?';
+    db.run(sql, [rating, id], function (err) {
+        if (err) return console.error(err.message);
+    });
+}
+
+app.post('/rateA', (req, res) => {
+    let id = req.user.id;
+    set_rating('Amazing', id)
+    res.redirect('/');
+});
+
+app.post('/rateG', (req, res) => {
+    let id = req.user.id;
+    set_rating('Good', id)
+    res.redirect('/');
+});
+
+app.post('/rateB', (req, res) => {
+    let id = req.user.id;
+    set_rating('Bad', id)
+    res.redirect('/');
+});
+
+app.post('/rateH', (req, res) => {
+    let id = req.user.id;
+    set_rating('Horrible', id)
+    res.redirect('/');
 });
 
 // Renders the advanced results page if user is logged in
