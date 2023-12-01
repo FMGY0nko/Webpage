@@ -193,7 +193,7 @@
         position: absolute;
         top: 23.5vw;
         left: 20.5vw;
-        width: 28.25vw;
+        width: 27.5vw;
         height: 10.75vw;
         border-color: black;
         border-style: solid;
@@ -207,8 +207,8 @@
     #con2 {
         position: absolute;
         top: 23.5vw;
-        left: 50.25vw;
-        width: 28.25vw;
+        right: 20.5vw;
+        width: 27.5vw;
         height: 10.75vw;
         border-color: black;
         border-style: solid;
@@ -223,7 +223,7 @@
         position: absolute;
         top: 35.75vw;
         left: 20.5vw;
-        width: 18.33333vw;
+        width: 18vw;
         height: 10.75vw;
         border-color: black;
         border-style: solid;
@@ -237,8 +237,8 @@
     #con4 {
         position: absolute;
         top: 35.75vw;
-        left: 40.33333vw;
-        width: 18.33333vw;
+        left: 40vw;
+        width: 18vw;
         height: 10.75vw;
         border-color: black;
         border-style: solid;
@@ -252,8 +252,8 @@
     #con5 {
         position: absolute;
         top: 35.75vw;
-        left: 60.16666vw;
-        width: 18.33333vw;
+        right: 20.5vw;
+        width: 18vw;
         height: 10.75vw;
         border-color: black;
         border-style: solid;
