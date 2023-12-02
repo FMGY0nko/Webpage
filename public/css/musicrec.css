@@ -2,6 +2,41 @@
 
 /* CSS/Display for Mobile */
 @media only screen and (max-width: 768px) {
+    #ratebox {
+        position: absolute;
+        top: 2vw;
+        left: 30vw;
+        width: 40vw;
+        height: 12vw;
+        padding: 3vw 0;
+        border: 0.5vw solid black;
+        border-radius: 1vw;
+        text-align: center;
+        justify-content: center;
+        vertical-align: auto;
+        display: inline-block;
+    }
+
+    #ratebox form {
+        display: inline-block;
+    }
+
+    .ratebtn {
+        border: none;
+        background: none;   
+        display: inline-block;
+        height: 5vw;
+        font-size: 5vw;
+        margin: 0.2vw;
+        line-height: 2.5vw;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .ratebtn:active {
+        transform: translateY(0.1vw); 
+    }
+
     #logo {
         display: block;
         margin: auto;
