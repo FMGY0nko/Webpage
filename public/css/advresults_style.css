@@ -76,6 +76,20 @@
         text-align: center;
         padding: 0;
         font-family: 'Open Sans', sans-serif;
+        overflow: auto;
+    }
+
+    .topscon::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    .topscon::-webkit-scrollbar-track {
+        box-shadow: 0.2vw 0.1vw 0.1vw black;
+    }
+       
+    .topscon::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid black;
     }
 
     .topscon h3 {
@@ -236,6 +250,7 @@
         text-align: center;
         padding: 0;
         font-family: 'Open Sans', sans-serif;
+        overflow: auto;
     }
 
     .topscon h3 {
@@ -247,6 +262,19 @@
         margin: 0;
         margin-bottom: 1vw;
         font-size: 1.1vw;
+    }
+
+    .topscon::-webkit-scrollbar {
+        width: 0.5vw;
+    }
+
+    .topscon::-webkit-scrollbar-track {
+        box-shadow: 0.2vw 0.1vw 0.1vw black;
+    }
+       
+    .topscon::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid black;
     }
 
     #con1 {
