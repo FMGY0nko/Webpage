@@ -190,6 +190,7 @@ function closepop(id) {
 
 // Opens the advanced results
 async function openadv() {
+    document.getElementById('loadingpop').style.display = 'block';
 
     // Calls token a defines artistimages and tracks
     const token = await _getToken(); 
