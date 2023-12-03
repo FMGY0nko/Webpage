@@ -18,22 +18,28 @@
 </head>
 <body>
     
+    <!-- Return button that links back to the home page -->
     <button type="button" onclick="location.href='/'" class="returnbtn">&#9166;</button>
 
+    <!-- Form that allows user to login into their account-->
     <form action="/login" method="POST" class="popup" id="login">
         <h1>Login</h1>
+        <!-- Input box for email -->
         <div id="email">
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required>
         </div>
+        <!-- Input box for password -->
         <div id="password">
             <label for="password">Password</label>
             <input type="password" placeholder="Enter Password" name="password" required>
         </div>
+        <!-- Input box for remember me option -->
         <div id="reme">
             <label for="remember">Remember Me</label>
             <input type="checkbox" value="remember-me" name="remember">
         </div>
+        <!-- Button that uses inputted info to login -->
         <button type="submit" id="logbtn" class="btbtn">Login</button>
     </form>
 

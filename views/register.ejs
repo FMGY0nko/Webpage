@@ -16,22 +16,28 @@
     <link rel="stylesheet" type="text/css" href="/css/musicrec.css">
 </head>
 <body>
+    <!-- Return button that links back to the home page -->
     <button type="button" onclick="location.href='/'" class="returnbtn">&#9166;</button>
 
+    <!-- Form that allows the user to register an account with the website -->
     <form action="/register" method="POST" class="popup" id="create_account">
         <h1>Create an Account</h1>
+        <!-- Input box for email -->
         <div class="createinput">
             <label for="email">Email</label>
             <input type="text" placeholder="Enter Email" name="email" required>
         </div>
+        <!-- Input box for username -->
         <div class="createinput">
             <label for="usrna">Username</label>
             <input type="text" placeholder="Enter Username" name="usrna" required>
         </div>
+        <!-- Input box for password -->
         <div class="createinput">
             <label for="PSW">Password</label>
             <input type="password" placeholder="Enter Password" name="PSW" required>
         </div>
+        <!-- Button that uses inputted info to register account -->
         <button type="submit" id="createbtn" class="btbtn">Create Account</button>
     </form>
 

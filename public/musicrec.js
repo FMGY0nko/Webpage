@@ -34,74 +34,100 @@ async function _getId(token, artist) {
     const market = 'US';
     const limit = 1; 
     const offset = 0;
-    
+
+    // Defines the method and fetches the id of an artist 
     const result = await fetch(`https://api.spotify.com/v1/search?q=${q}&type=${type}&market=${market}&limit=${limit}&offset=${offset}`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json();
+
+    // Returns the id of the id specifically
     return data.artists.items[0].id;
 }
 
 // Function that gets the name of an artist
 async function _getArtistName(id, token) {
     
+    // Defines the method and fethches the artist information
     const result = await fetch(`https://api.spotify.com/v1/artists/${id}`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json();
+
+    // Returns only the name of an artist
     return data.name;
 }
 
 // Function that gets the Artists related to the inputed ones
 async function _getRelatedArtists(id, token) {
     
+    // Defines the method and fetches related artists
     const result = await fetch(`https://api.spotify.com/v1/artists/${id}/related-artists`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json();
+
+    // Returns ids of related artists
     return data.artists.map(artist => artist.id);
 }
 
 // Function that converts the ids of the Related Artists to their names
 async function _getArtistNames(ids, token) {
     
+    // Defines the method and fethches the artists' information
     const result = await fetch(`https://api.spotify.com/v1/artists?ids=${ids.join(',')}`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json();
+
+    // Returns their names 
     return data.artists.map(artist => artist.name);
 }
 
 // Function that gets image of an artist
 async function _getArtistImage(id, token) {
     
+    // Defines the method and fethches the artist information
     const result = await fetch(`https://api.spotify.com/v1/artists/${id}`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json()
+
+    // Returns the image url of their spotify picture 
     return data.images[0].url;
 }
 
+// Function that gets the top tracks 
 async function _getTopTracks(id, token) {
 
+    // Defines the market
     const market = 'US';
 
+    // Defines the method and fethches the artist's top songs
     const result = await fetch(`https://api.spotify.com/v1/artists/${id}/top-tracks?market=${market}`, {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + token}
     });
     
+    // Gets the result data
     const data = await result.json();
+
+    // Returns the tops songs
     return data.tracks.slice(0, 5).map(track => track.name);
 }
 
@@ -177,8 +203,9 @@ async function Results() {
             fontscaler(`artist${n}`, `con${n}`);
         };
 
+        // Makes input box empty after search
         document.getElementById('inputbox').value = '';
-    } catch(err) {
+    } catch(err) { // Displays error box if an error occurs
         document.getElementById('err').style.display = 'block';
     }
 }
@@ -190,6 +217,7 @@ function closepop(id) {
 
 // Opens the advanced results
 async function openadv() {
+    // Displays loading screen
     document.getElementById('loadingpop').style.display = 'block';
 
     // Calls token a defines artistimages and tracks

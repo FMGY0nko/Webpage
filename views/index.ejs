@@ -18,7 +18,8 @@
 
 </head>
 <body>
-    
+
+    <!-- If the user is logged in, it allows the user to rate the website -->
     <% if (authenticated) { %>
         <div id="ratebox">
             <form action="/rateA" method="POST">
@@ -116,6 +117,7 @@
         </ol>
     </div>
 
+    <!-- Popup that appears when loading the advanced results -->
     <div id="loadingpop">
         <div id="backblur"></div>
         <h1>Loading...</h1>
