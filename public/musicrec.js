@@ -237,7 +237,7 @@ async function openadv() {
     for (let n = 0; n < 5; n++) {
         artisttracks.push(await APITracksConnector(artistnames[n], token));
     };
-
+    
     // Adds the lists to the session storage so another javascript file can access them
     sessionStorage.setItem("artistimages", JSON.stringify(artistimages));
     sessionStorage.setItem("artisttracks", JSON.stringify(artisttracks));

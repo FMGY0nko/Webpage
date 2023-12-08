@@ -160,6 +160,7 @@ app.get('/profile', checkAuthenticated, (req, res) => {
             });
         });
     }
+
     Promise.all([
         _getHistory(1),
         _getHistory(2),

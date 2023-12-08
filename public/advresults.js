@@ -43,9 +43,9 @@ function loadresults() {
     };
 
     // Adds artist images to the webpage
-    for (let n = 0; n < artistimages.length; n++) {
-        document.getElementById(`img${n + 1}`).src = artistimages[n];
-    };
+    for (let n = 1; artistimages.length > 0; n += 1) {
+        document.getElementById(`img${n}`).src = artistimages.shift();
+    }
 
     // Adss all the tracks to each artists profile
     for (let j = 1; j <= 5; j++) {
