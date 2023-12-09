@@ -42,11 +42,14 @@ function loadresults() {
         document.getElementById(`art${i + 1}`).style.fontSize = `${fontscaler(`art${i + 1}`, textsize, `tcon${i + 1}`)}vw`;
     };
 
-    // Adds artist images to the webpage
-    for (let n = 1; artistimages.length > 0; n += 1) {
-        document.getElementById(`img${n}`).src = artistimages.shift();
+    try {
+        // Adds artist images to the webpage with a queue
+        for (let n = 1; artistimages.length > 0; n += 1) {
+            document.getElementById(`img${n}`).src = artistimages.shift();
+        }
+    } catch(err) {
+        console.log('There was an error when loading artist images');
     }
-
     // Adss all the tracks to each artists profile
     for (let j = 1; j <= 5; j++) {
         tracks(artisttracks, j);
